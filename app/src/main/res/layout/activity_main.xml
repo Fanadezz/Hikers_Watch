@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@drawable/jorre"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/title"
+        style="@style/TextAppearance.MaterialComponents.Headline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:text="@string/title"
+        android:textColor="#fff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/longitudeTextView"
+        style="@style/TextAppearance.MaterialComponents.Headline5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textColor="#fff"
+        app:layout_constraintBottom_toTopOf="@+id/accuracyTextView"
+        app:layout_constraintStart_toStartOf="@+id/accuracyTextView"
+        app:layout_constraintTop_toBottomOf="@+id/latitudeTextView"
+        tools:text="Longitude: -73.32" />
+
+    <TextView
+        android:id="@+id/latitudeTextView"
+        style="@style/TextAppearance.MaterialComponents.Headline5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textColor="#fff"
+        app:layout_constraintBottom_toTopOf="@+id/longitudeTextView"
+        app:layout_constraintStart_toStartOf="@+id/longitudeTextView"
+        app:layout_constraintTop_toBottomOf="@+id/title"
+        app:layout_constraintVertical_bias="0.04000002"
+        app:layout_constraintVertical_chainStyle="packed"
+        tools:text="Latitude: 40.60592530" />
+
+    <TextView
+        android:id="@+id/accuracyTextView"
+        style="@style/TextAppearance.MaterialComponents.Headline5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textColor="#fff"
+        app:layout_constraintBottom_toTopOf="@+id/altitudeTextView"
+        app:layout_constraintStart_toStartOf="@+id/altitudeTextView"
+        app:layout_constraintTop_toBottomOf="@+id/longitudeTextView"
+        tools:text="Accuracy: 20.0" />
+
+    <TextView
+        android:id="@+id/altitudeTextView"
+        style="@style/TextAppearance.MaterialComponents.Headline5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textColor="#fff"
+        app:layout_constraintBottom_toTopOf="@+id/addressTextView"
+        app:layout_constraintStart_toStartOf="@+id/addressTextView"
+        app:layout_constraintTop_toBottomOf="@+id/accuracyTextView"
+        tools:text="Altitude: 5.0" />
+
+    <TextView
+        android:id="@+id/addressTextView"
+        style="@style/TextAppearance.MaterialComponents.Headline5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textColor="#fff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.178"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/altitudeTextView"
+        tools:text="Address: Haile Selasie" />
+
+</androidx.constraintlayout.widget.ConstraintLayout><!--  android:background="@drawable/jorre"-->
